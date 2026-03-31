@@ -1,0 +1,43 @@
+# PHP backend (not needed for static demo)
+*.php
+bootstrap.php
+auth.php
+api/
+elearning/
+payment/
+email/
+
+# Database files
+*.db
+*.sql
+schema-migration-main-db.php
+
+# Development helpers
+trusted-device-helper.php
+verification-helper.php
+verify.php
+logout.php
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment
+.env
+.env.local
+
+# Node modules (if added)
+node_modules/
+package-lock.json
+
+# Logs
+*.log
+npm-debug.log*
