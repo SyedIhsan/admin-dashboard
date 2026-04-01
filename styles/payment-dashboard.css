@@ -1,0 +1,105 @@
+/**
+ * Payment Dashboard Styles (pages/payment/dashboard.html)
+ * Dashboard-specific layout and component styling
+ */
+
+/* KPI Cards */
+.kpi-card {
+  transition: all 0.3s ease;
+}
+
+.kpi-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Chart Containers */
+.chart-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Recent Activity List */
+.activity-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+}
+
+.activity-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  background-color: rgb(241 245 249);
+  color: rgb(100 116 139);
+}
+
+.activity-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.activity-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgb(31 41 55);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.activity-time {
+  font-size: 0.75rem;
+  color: rgb(107 114 128);
+  margin-top: 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.activity-amount {
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgb(5 150 105);
+  background-color: rgb(236 253 245);
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid rgb(167 243 208);
+  white-space: nowrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .activity-title {
+    font-size: 0.75rem;
+  }
+
+  .activity-time {
+    font-size: 0.65rem;
+  }
+
+  .activity-amount {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+  }
+}
+
+/* Chart responsive */
+@media (max-width: 1024px) {
+  .chart-container {
+    height: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  .chart-container {
+    height: 250px;
+  }
+}

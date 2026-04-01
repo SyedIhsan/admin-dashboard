@@ -1,0 +1,12 @@
+/**
+ * OTP/Verification Page Styles (verify.html)
+ * Message display states (error and success)
+ */
+
+#errorMessage {
+  display: none;
+}
+
+#successMessage {
+  display: none;
+}

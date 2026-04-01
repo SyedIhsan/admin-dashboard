@@ -1,0 +1,24 @@
+/**
+ * Login Page Styles (index.html)
+ * Form error handling and display states
+ */
+
+.error-hidden {
+  display: none;
+}
+
+#errorMessage {
+  display: none;
+}
+
+#errorMessage.show {
+  display: block;
+}
+
+#errorMessage[style*="display: block"] {
+  display: block;
+}
+
+.error-visible {
+  display: block;
+}
